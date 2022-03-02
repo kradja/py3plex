@@ -861,7 +861,7 @@ class multi_layer_network:
                                       weight=weight)
             vectors = nx.to_scipy_sparse_matrix(simple_graph)
             self.numeric_core_network = vectors
-            self.node_order_in_matrix = simple_graph.nodes()
+            self.node_order_in_matrix = nmap
 
         else:
             unique_layers = set(n[1] for n in self.core_network.nodes())
